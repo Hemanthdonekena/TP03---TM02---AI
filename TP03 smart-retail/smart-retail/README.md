@@ -1,6 +1,6 @@
 # Smart Retail: Customer Purchase Prediction — Codespaces Starter
 
-A from-scratch, Codespaces-friendly starter for an AI-powered recommendation engine that clusters customers (K-Means) and predicts next purchases (RandomForest/XGBoost), with a FastAPI service for real-time recommendations and scaffolding for AWS integration (SageMaker/Lambda/DynamoDB placeholders).
+A from-scratch, Codespaces-friendly starter for an AI-powered recommendation engine that clusters customers (K-Means) Python and predicts next purchases.
 
 ## Quickstart (GitHub Codespaces)
 
