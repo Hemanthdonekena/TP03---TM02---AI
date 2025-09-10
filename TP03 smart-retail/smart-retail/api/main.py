@@ -28,7 +28,7 @@ def recommend(req: RecommendRequest):
 @app.get("/recommend_ui", response_class=HTMLResponse)
 def recommend_ui(customer_id: int = 1, recent_category: Optional[str] = None, top_k: int = 5):
     recs = recommend_for_customer(customer_id, recent_category, top_k)
-    html = "<h2>Recommendations</h2><table border='1'><tr><th>Category</th><th>Score</th></tr>"
+    html = "<h2>Recommendations</h2><h3> Customer id: "+ str(customer_id)+"</h3><table border='1'><tr><th>Category</th><th>Score</th></tr>"
     for r in recs:
         html += f"<tr><td>{r['category']}</td><td>{r['score']:.2f}</td></tr>"
     html += "</table>"
